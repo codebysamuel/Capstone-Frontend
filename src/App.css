@@ -3,6 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+.primary-lemon{
+  color:#F4CE14
+ }
+ .primary-dark{
+  color:#495E57;
+ }
+
  .navbar{
   margin-left: -15px;
   margin-right: -15px;
@@ -30,5 +37,20 @@
 .nav-font {
  font-size: x-large !important;
 }
-
+.hero{
+  background-color:#495E57;
+  height:60vh;
+  border-radius: 25px;
+}
+ .hero-img{
+  width:80%;
+  height:80%;
+ }
+.hero-heading{
+  font-size:3.3rem;
+}
+.hero-p{
+  color:white;
+  font-size: 1.5rem;
+}
  

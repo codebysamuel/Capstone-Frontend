@@ -54,3 +54,56 @@
   font-size: 1.5rem;
 }
  
+footer{
+background-color: #f7f8f9;;
+ 
+margin-left: -15px;
+margin-right: -15px;
+ 
+}
+.copyright{
+  font-weight: bold;
+}
+footer>.logo{
+  margin-left:10%;
+}
+.touch{
+  margin-left:100px;
+}
+.social{
+  background-color: #495E57;
+  height:7vh;
+  color:white;
+}
+
+.newsletter{
+ margin-right:200px;
+}
+
+.btn-sub{
+ background-color: #495E57 !important;
+ color:white !important;
+ font-weight: bold !important;
+ margin-bottom: 10px;
+}
+
+.activefooter{
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  color:black
+}
+
+.nonactivefooter{
+  font-weight: normal;
+  text-decoration: none;
+
+  width:60%;
+}
+
+.nonactivefooter:hover{
+  background-color: #F4CE14;
+  color:#495E57;
+  font-weight: bold;
+  
+}

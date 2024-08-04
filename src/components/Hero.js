@@ -9,7 +9,7 @@ const Hero = () => {
         restaurant, focused on traditional recipes served with a modern twist.
      </p>
         </div>
-        <div className='col-md-5 mt-5 px-5'>
+        <div className='col-md-5 mt-5 px-5 d-sm-none d-md-block'>
             <img src={restauranfood} alt='restaurant food' className='hero-img'/>
         </div>
     

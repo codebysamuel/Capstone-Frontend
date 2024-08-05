@@ -107,3 +107,24 @@ footer>.logo{
   font-weight: bold;
   
 }
+.fa-brands{
+margin-left: 4%;
+}
+.fa-brands:hover{
+color:#F4CE14
+  }
+.about-img{
+  width:60%;
+  height:40%;
+  margin-top:7%;
+  border-radius: 25px;
+}
+
+.about-heading,.about-subheading{
+  font-weight: bold;
+  font-size:3.5rem;
+}
+
+.about-para>p{
+  font-size:1.2rem;
+}

@@ -67,9 +67,10 @@ RESERVATION            </NavLink>
           </div>
           <div class="col-xs-12 col-md-5 order-0 order-md-1 mt-3">
           <ul class="list-unstyled m-0 p-0 d-flex justify-content-center">
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
+          
+            <i className="fa fa-brands fa-2x fa-facebook"/>
+            <i className="fa fa-brands fa-2x fa-instagram"/>
+            <i className="fa fa-brands fa-2x fa-twitter"/>
             </ul>
         </div>
     </div>

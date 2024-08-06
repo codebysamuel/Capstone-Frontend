@@ -1,10 +1,10 @@
 import Hero from "../components/Hero"
-import Navbar from "../components/Navbar"
+import Categories from "../components/Categories"
 function Home(){
     return (
-        <div className="container">
-      
+        <div className="container">      
         <Hero/>
+        <Categories/>
         </div>
     )
 }

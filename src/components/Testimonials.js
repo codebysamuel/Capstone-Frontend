@@ -3,54 +3,7 @@ import React from 'react'
 const Testimonials = () => {
   return (
     <>
-     {/* <section classNameName="home-testimonial">
-    <div classNameName="container-fluid">
-        <div classNameName="row d-flex justify-content-center testimonial-pos">
-            <div classNameName="col-md-12 pt-4 d-flex justify-content-center">
-                <h3>Testimonials</h3>
-            </div>
-            <div classNameName="col-md-12 d-flex justify-content-center">
-                <h2>Explore the students experience</h2>
-            </div>
-        </div>
-        <section classNameName="home-testimonial-bottom">
-            <div classNameName="container testimonial-inner">
-                <div classNameName="row d-flex justify-content-center">
-                    <div classNameName="col-md-4 style-3">
-                        <div classNameName="tour-item ">
-                            <div classNameName="tour-desc bg-white">
-                                <div classNameName="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;</div>
-                                <div classNameName="d-flex justify-content-center pt-2 pb-2"><img classNameName="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""/></div>
-                                <div classNameName="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                <div classNameName="link-position d-flex justify-content-center">Student</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div classNameName="col-md-4 style-3">
-                        <div classNameName="tour-item ">
-                            <div classNameName="tour-desc bg-white">
-                                <div classNameName="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;</div>
-                                <div classNameName="d-flex justify-content-center pt-2 pb-2"><img classNameName="tm-people" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/></div>
-                                <div classNameName="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                <div classNameName="link-position d-flex justify-content-center">Student</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div classNameName="col-md-4 style-3">
-                        <div classNameName="tour-item ">
-                            <div classNameName="tour-desc bg-white">
-                                <div classNameName="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;</div>
-                                <div classNameName="d-flex justify-content-center pt-2 pb-2"><img classNameName="tm-people" src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/></div>
-                                <div classNameName="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                <div classNameName="link-position d-flex justify-content-center">Student</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-        </section>
-        </div>
-</section> */}
+     
  
 <section className="bg-light py-5 py-xl-8">
   <div className="container">

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About'
 import BookingForm from './pages/BookingForm';
 import Menu from './pages/Menu';
+import ConfirmPage from './pages/ConfirmPage';
 function App() {
   return (
     <div className='container-fluid'>
@@ -17,6 +18,7 @@ function App() {
      <Route path="/about" element={<About/>}></Route>
      <Route path="/menu" element={<Menu/>}></Route>
      <Route path="/reserve" element={<BookingForm/>}></Route>
+     <Route path="/confirm" element={<ConfirmPage/>}></Route>
      </Route>
     </Routes>
   </Router>

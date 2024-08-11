@@ -22,6 +22,7 @@ if(e.target.name==='fname'){
 }else if(e.target.name==='email'){
   setUser({...user,email:e.target.value})
 }
+console.log(user.firstName,user.lastName,user.email)
   }
 
  
@@ -35,11 +36,13 @@ if(num<1){
 }else{
   setGuests(num)
 }
+console.log(guests)
   }
 
  
 
   const handleSubmit=(e)=>{
+    console.log('handle submit called')
 e.preventDefault()
 console.log(user.firstName,user.lastName,guests,date,time,occassion)
 setMsg({
@@ -49,6 +52,7 @@ setMsg({
   line3: `We will see you soon for the ${occassion} event!`,
 });
 setConfirm(true)
+navigate("/confirm")
   }
     return (
         <div className="container pt-5">
@@ -58,7 +62,7 @@ setConfirm(true)
             <form onSubmit={handleSubmit}>
   <div class="row">
     <div class="col">
-        <label for="fname">First Name:</label>
+        <label for="fname" className='form-label'>First Name:</label>
       <input type="text" class="form-control" 
       value={user.firstName}
       onChange={handleUser}
@@ -67,14 +71,14 @@ setConfirm(true)
       />
     </div>
     <div class="col">
-    <label for="lname">Last Name:</label>
+    <label for="lname" className='form-label'>Last Name:</label>
       <input type="text" class="form-control"
       value={user.lastName}
       onChange={handleUser}
       placeholder="Enter last name" name="lname" required/>
     </div>
     <div class="col">
-    <label for="email">email:</label>
+    <label for="email" className='form-label'>Email:</label>
       <input type="email" class="form-control"
       value={user.email}
       onChange={handleUser}
@@ -86,15 +90,18 @@ setConfirm(true)
   {/* date and time */}
   <div class="row">
     <div class="col">
-        <label for="date">Date:</label>
+        <label for="date" className='form-label'>Date:</label>
       <input type="date" class="form-control"  
       value={date}
       onChange={(e)=>setDate(e.target.value)}
+      className="form-control"
       name="date"/>
     </div>
     <div class="col">
-    <label for="time">Time:</label>
-   <select name='date' id='date' className='' value={time} onChange={(e)=>setTime(e.target.value)}>
+    <label for="time" className='form-label'>Time:</label>
+   <select name='date'
+   className="form-select"
+   id='date'   value={time} onChange={(e)=>setTime(e.target.value)}>
     <option>
       select time
     </option>
@@ -113,14 +120,16 @@ setConfirm(true)
   {/* guests and occassion */}
   <div class="row">
     <div class="col">
-        <label for="guests">No. Of Guests:</label>
+        <label for="guests" className='form-label'>No. Of Guests:</label>
       <input type="number"
       value={guests} onChange={handleGuests}
       class="form-control" placeholder="2" name="guests"/>
     </div>
     <div class="col">
-    <label for="occassion">occassion:</label>
-     <select name="date" id="date" value={occassion} onChange={(e)=>setOccassion(e.target.value)}>
+    <label for="occassion" className='form-label'>Occassion:</label>
+     <select name="date" id="date" 
+     className="form-select"
+     value={occassion} onChange={(e)=>setOccassion(e.target.value)}>
       <option defaultValue hidden>
         Select Occassion
       </option>
@@ -139,8 +148,8 @@ setConfirm(true)
 
     </div>
     <div className="col">
-    <button className="btn btn-primary btn-lg" onClick={()=>navigate("/confirm")}> Confirm Reservation</button>
-
+       <button className="btn btn-primary btn-lg"> Confirm Reservation</button>
+        
         </div>
     <div className="col">
         

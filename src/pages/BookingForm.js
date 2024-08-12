@@ -1,6 +1,18 @@
 import { useState } from 'react';
 import { useGlobalContext } from '../AppContext'
 import { Navigate, useNavigate } from 'react-router-dom';
+
+
+const today = new Date();
+const tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);
+
+const year = tomorrow.getFullYear();
+const month = String(tomorrow.getMonth() + 1).padStart(2, "0");
+const day = String(tomorrow.getDate()).padStart(2, "0");
+
+const nextDayFormatted = `${year}-${month}-${day}`;
+const minDate = nextDayFormatted;
+
 function BookingForm(){
     const { setConfirm, msg, setMsg, availableTimes} = useGlobalContext();
     const navigate=useNavigate()
@@ -9,11 +21,14 @@ function BookingForm(){
     lastName:"",
     email:""
   });
-  const [date,setDate]=useState();
+  const [date,setDate]=useState(minDate);
   const [time,setTime]=useState();
   const [guests,setGuests]=useState(2)
   const[occassion,setOccassion]=useState()
 
+  const isFilled=()=>{
+    return user.firstName && user.lastName && user.email && date && time && guests && occassion;
+  }
   const handleUser=(e)=>{
 if(e.target.name==='fname'){
   setUser({...user,firstName:e.target.value})
@@ -95,19 +110,21 @@ navigate("/confirm")
       value={date}
       onChange={(e)=>setDate(e.target.value)}
       className="form-control"
-      name="date"/>
+      name="date" required
+      min={minDate}
+      />
     </div>
     <div class="col">
     <label for="time" className='form-label'>Time:</label>
    <select name='date'
    className="form-select"
-   id='date'   value={time} onChange={(e)=>setTime(e.target.value)}>
+   id='date' value={time} onChange={(e)=>setTime(e.target.value)}  required>
     <option>
       select time
     </option>
     {availableTimes.map((element,i)=>{
       return(
-        <option key={i} value={element}>
+        <option key={i} value={element}  >
           {element}
         </option>
       )
@@ -148,7 +165,7 @@ navigate("/confirm")
 
     </div>
     <div className="col">
-       <button className="btn btn-primary btn-lg"> Confirm Reservation</button>
+       <button className="btn mt-4  btn-lg btn-reserve" disabled={!isFilled()}> Confirm Reservation</button>
         
         </div>
     <div className="col">

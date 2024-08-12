@@ -59,13 +59,13 @@ RESERVATION            </NavLink>
             </form>
       </div>
     </div>
-    <div className="row gy-4 gy-md-0 social">
-    <div class="col-xs-12 col-md-7 order-1 order-md-0 mt-3">
+    <div className="row gy-4 gy-md-0 social p-2">
+    <div class="col-xs-12 col-md-7 order-1 order-md-0  md-1">
           <div class="copyright text-center align-items-center">
             &copy; 2024. All Rights Reserved
           </div>
           </div>
-          <div class="col-xs-12 col-md-5 order-0 order-md-1 mt-3">
+          <div class="col-xs-12 col-md-5 order-0 order-md-1">
           <ul class="list-unstyled m-0 p-0 d-flex justify-content-center">
           
             <i className="fa fa-brands fa-2x fa-facebook"/>

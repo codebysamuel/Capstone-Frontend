@@ -9,15 +9,15 @@ function Menu(){
       <div className="row">
         <h3>Appetizers</h3>
         <div className="col">
-        <img src={ImageData[0]} width="100%"/>
+        <img src={ImageData[0]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[1]} width="100%"/>
+        <img src={ImageData[1]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[2]} width="100%"/>
+        <img src={ImageData[2]} width="100%" className="menu"/>
         </div>
         <div className="col">
        <Link className="px-5"> <h3>More...</h3></Link>
@@ -26,15 +26,15 @@ function Menu(){
       <div className="row">
         <h3>Main Dishes</h3>
         <div className="col">
-        <img src={ImageData[3]} width="100%"/>
+        <img src={ImageData[3]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[4]} width="100%"/>
+        <img src={ImageData[4]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[5]} width="100%"/>
+        <img src={ImageData[5]} width="100%" className="menu"/>
         </div>
         <div className="col">
         <Link className="px-5"> <h3>More...</h3></Link>
@@ -43,15 +43,15 @@ function Menu(){
       <div className="row">
         <h3>Desserts</h3>
         <div className="col">
-        <img src={ImageData[6]} width="100%"/>
+        <img src={ImageData[6]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[7]} width="100%"/>
+        <img src={ImageData[7]} width="100%" className="menu"/>
 
         </div>
         <div className="col">
-        <img src={ImageData[8]} width="100%"/>
+        <img src={ImageData[8]} width="100%" className="menu"/>
 
         </div>
         <div className="col">

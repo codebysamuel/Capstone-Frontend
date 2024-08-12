@@ -1,33 +1,38 @@
 import React from 'react'
-
+import charles from '../images/users/charles.jpg'
+import joshua from '../images/users/Joshua.jpg'
+import teresa from '../images/users/Teresa.jpg' 
 const Testimonials = () => {
   return (
     <>
      
  
-<section className="bg-light py-5 py-xl-8">
+<section className=" py-5 py-xl-8 testi">
   <div className="container">
     <div className="row justify-content-md-center">
       <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-        <h2 className="fs-6 text-secondary mb-2 text-uppercase text-center">Happy Customers</h2>
-        <p className="display-5 mb-4 mb-md-5 text-center">We deliver what we promise. See what clients are expressing about us.</p>
+        <h1 className=" primary-dark fs-4   mb-2 text-uppercase text-center">Happy Customers</h1>
+        <p className="display-6 mb-2 mb-md-2 text-center">We deliver what we promise. See what customers are expressing about us.</p>
         <hr className="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle"/>
       </div>
     </div>
   </div>
 
   <div className="container overflow-hidden">
-    <div className="row gy-4 gy-md-0 gx-xxl-5">
+    <div className="row">
       <div className="col-12 col-md-4">
         <div className="card border-0 border-bottom border-primary shadow-sm">
           <div className="card-body p-4 p-xxl-5">
             <figure>
-              <img className="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="./assets/img/testimonial-img-1.jpg" alt="Luna John"/>
+              <img className="img-fluid rounded rounded-circle mb-4 border border-5"
+               loading="lazy" src={charles} alt="Luna John"/>
               <figcaption>
                 <div className="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                <blockquote className="bsb-blockquote-icon mb-4">We were so impressed with the work they did for us. They were able to take our vision and turn it into a reality, and they did it all on time and within budget. We would highly recommend them to anyone looking for a reliable partner.</blockquote>
-                <h4 className="mb-2">Luna John</h4>
-                <h5 className="fs-6 text-secondary mb-0">UX Designer</h5>
+                <blockquote className="bsb-blockquote-icon mb-4">
+                The food was exceptional, with every dish bursting with flavor and beautifully presented.
+                  </blockquote>
+                <h4 className="mb-2">Charles Emanuel</h4>
+                <h5 className="fs-6 text-secondary mb-0">Tourist</h5>
               </figcaption>
             </figure>
           </div>
@@ -37,12 +42,15 @@ const Testimonials = () => {
         <div className="card border-0 border-bottom border-primary shadow-sm">
           <div className="card-body p-4 p-xxl-5">
             <figure>
-              <img className="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="./assets/img/testimonial-img-2.jpg" alt="Mark Smith"/>
+              <img className="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy"
+               src={teresa} alt="Mark Smith"/>
               <figcaption>
                 <div className="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
-                <blockquote className="bsb-blockquote-icon mb-4">We were looking for a company that could help us develop a new website that was both visually appealing and user-friendly. We are so happy with the results, and we would highly recommend them to anyone looking for a new website.</blockquote>
-                <h4 className="mb-2">Mark Smith</h4>
-                <h5 className="fs-6 text-secondary mb-0">Marketing Specialist</h5>
+                <blockquote className="bsb-blockquote-icon mb-4">
+                Outstanding service and a cozy ambiance made for an unforgettable dining experience.
+                  </blockquote>
+                <h4 className="mb-2">Teresa Salerno</h4>
+                <h5 className="fs-6 text-secondary mb-0">Tourist</h5>
               </figcaption>
             </figure>
           </div>
@@ -52,12 +60,15 @@ const Testimonials = () => {
         <div className="card border-0 border-bottom border-primary shadow-sm">
           <div className="card-body p-4 p-xxl-5">
             <figure>
-              <img className="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="./assets/img/testimonial-img-4.jpg" alt="Luke Reeves"/>
+              <img className="img-fluid rounded rounded-circle mb-4 border border-5"
+               loading="lazy" src={joshua} alt="Luke Reeves"/>
               <figcaption>
                 <div className="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                <blockquote className="bsb-blockquote-icon mb-4">We were looking for a company that could help us with our branding. We needed a website and marketing materials. They were able to create a brand identity that we loved. They worked with us to develop a logo that represented our company.</blockquote>
-                <h4 className="mb-2">Luke Reeves</h4>
-                <h5 className="fs-6 text-secondary mb-0">Sales Manager</h5>
+                <blockquote className="bsb-blockquote-icon mb-4">
+                From appetizers to dessert, each course was a culinary delight that left us eager to return.
+                </blockquote>
+                <h4 className="mb-2">Joshua Nicholson</h4>
+                <h5 className="fs-6 text-secondary mb-0">Local</h5>
               </figcaption>
             </figure>
           </div>

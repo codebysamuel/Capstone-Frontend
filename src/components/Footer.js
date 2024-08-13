@@ -19,8 +19,10 @@ const Footer = () => {
       <div className="col-12 col-md-4 col-lg-3 col-xl-2 touch">        <h4>Get in touch</h4>
         <p>123 Star Plaza AV, Erandel, Newerland</p>
       </div>
-      <div className="col-12 col-md-4 col-lg-3 col-xl-2">       
+      <div className="col-12 col-md-4 col-lg-3 col-xl-2">     
+        <h4>Sitemap</h4>
        <ul className="navbar-nav mx-auto ">
+       
        <NavLink className={({ isActive }) => (isActive ? style.Active : style.nonActive)} to="/">
               HOME
             </NavLink>
@@ -47,7 +49,7 @@ RESERVATION            </NavLink>
                       </svg>
                     </span>
                     <input type="email" 
-                    class="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required/>
+                    className="form-control" id="email-newsletter" value="" placeholder="Email Address" aria-label="email-newsletter" aria-describedby="email-newsletter-addon" required/>
                   </div>
                 </div>
                 <div className="col-12">
@@ -60,12 +62,12 @@ RESERVATION            </NavLink>
       </div>
     </div>
     <div className="row gy-4 gy-md-0 social p-2">
-    <div class="col-xs-12 col-md-7 order-1 order-md-0  md-1">
+    <div class="col-xs-12 col-md-7">
           <div class="copyright text-center align-items-center">
             &copy; 2024. All Rights Reserved
           </div>
           </div>
-          <div class="col-xs-12 col-md-5 order-0 order-md-1">
+          <div class="col-xs-12 col-md-5 ">
           <ul class="list-unstyled m-0 p-0 d-flex justify-content-center">
           
             <i className="fa fa-brands fa-2x fa-facebook"/>

@@ -1,7 +1,10 @@
 import React from 'react'
 import { useGlobalContext } from '../AppContext'
+import { Link } from 'react-router-dom';
+
 const ConfirmPage = () => {
     const {msg} = useGlobalContext();
+   
  console.log('what is msg:',msg)
   return (
     <div>
@@ -19,7 +22,22 @@ const ConfirmPage = () => {
           <h6>{`${msg.line3}`}</h6>
       
             </>
-          ):<> <h4 className='mt-4'> Please reserve a table first!</h4></>
+          ):<>
+          <div className='row'>
+          <h4 className='mt-4'> Please reserve a table first!</h4>
+
+          </div>
+          <div className='row'>
+          <div className='col'></div>
+          <div className='col'>
+          <Link to="/reserve" className='btn btn-lg btn-confirm'>Reserve</Link>
+          </div>
+          <div className='col'></div>
+          </div>
+         
+         
+          
+          </>
         }
         
          </div>

@@ -1,23 +1,31 @@
-import { Link,NavLink } from "react-router-dom"
-import LLLogo from "../images/logos/Logo.svg";
+import { NavLink } from "react-router-dom";
+import LLLogo from "../images/logos/Logo .svg"
 const style = {
-    navActive: "nav-font px-3 nav-item nav-link nav-active",
-    navNonActive: "nav-font px-3 nav-item nav-link hover",
-  };
-const Navbar=()=>{
-    return(
-        <nav className="navbar navbar-expand-sm">
-  <div class="container">
-    <Link to="/" className="logo">
-  <img className="logo-height img-fluid" src={LLLogo} alt="Little Lemon Logo" />
-  </Link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav mx-auto">
-       
-           <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/">
+  navActive: "nav-font px-3 nav-item nav-link nav-active",
+  navNonActive: "nav-font px-3 nav-item nav-link hover",
+};
+
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand-md navbar-light bg-light pd mb-3">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          <img className="logo-height img-fluid" src={LLLogo} alt="Little Lemon Logo" />
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav mx-auto">
+            <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/">
               HOME
             </NavLink>
             <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/about">
@@ -27,12 +35,13 @@ const Navbar=()=>{
               MENU
             </NavLink>
             <NavLink className={({ isActive }) => (isActive ? style.navActive : style.navNonActive)} to="/reserve">
-RESERVATION            </NavLink>
-      </ul>
-    </div>
-  </div>
-</nav> 
-    )
-}
+              RESERVE
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

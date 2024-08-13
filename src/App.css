@@ -72,7 +72,7 @@ footer>.logo{
 }
 .social{
   background-color: #495E57;
-  height:7vh;
+  height:12vh;
   color:white;
 }
 
@@ -147,4 +147,50 @@ color:#F4CE14
   background-color: #F4CE14 !important;
   font-weight: bold !important;
   color:#495E57 !important;
+}
+
+.btn-confirm{
+  background-color:#495E57 !important;
+  font-weight: bold !important;
+  color: #F4CE14 !important;
+}
+
+.btn-confirm:hover{
+  border:2px solid #495E57 !important; 
+  background-color:white !important;
+  color:#495E57 !important;
+}
+
+/****media query ******/
+@media only screen and (max-width: 600px) {
+ 
+  .hero-img{
+    display: none;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+  .touch{
+    margin-left:10%;
+    
+  }
+  .about-img{
+    margin:0 auto;
+    width:80% !important;
+    margin-bottom: 10%;
+  }
+  .newsletter{
+    margin-left:1%;
+    width:30%;
+  }
+ 
+  .btn-sub{
+    margin-bottom:15%;
+    margin-left: 10%;
+    width:40%;
+  }
+  .social{
+    height:20vh;
+  }
+ 
 }

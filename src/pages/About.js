@@ -4,7 +4,7 @@ function About(){
     return (
        
         <div className="row">
-            <div className="col-5 mt-3 mx-5">
+            <div className="col-md-5 mt-3 mx-5 col-sm-12">
                <h1 className='about-heading primary-lemon'>Little Lemon</h1>
                <h2 className='about-subheading primary-dark'>Chicago</h2>
                <div className='about-para'>
@@ -20,7 +20,7 @@ function About(){
                </div>
               
             </div>
-            <div className="col-6 mx-2">
+            <div className="col-md-6 mx-2 col-sm-12">
                 <img src={restaurantImg} alt='restaurant image' className='about-img'/>
                 <img src={restaurantChefImg} alt='restaurant chef' className='about-img'/>
             </div>

@@ -57,14 +57,14 @@ console.log(guests)
  
 
   const handleSubmit=(e)=>{
-    console.log('handle submit called')
+  
 e.preventDefault()
 console.log(user.firstName,user.lastName,guests,date,time,occassion)
 setMsg({
   ...msg,
   line1: `Dear ${user.firstName} ${user.lastName}:`,
   line2: `Your table for party of ${guests} is reserved for ${date} at ${time}.`,
-  line3: `We will see you soon for the ${occassion} event!`,
+  line3: `See you soon for the ${occassion}! Thank You!!`,
 });
 setConfirm(true)
 navigate("/confirm")
@@ -76,7 +76,7 @@ navigate("/confirm")
             <div className="row">
             <form onSubmit={handleSubmit}>
   <div class="row">
-    <div class="col">
+    <div class="col-md-3">
         <label for="fname" className='form-label'>First Name:</label>
       <input type="text" class="form-control" 
       value={user.firstName}
@@ -85,14 +85,14 @@ navigate("/confirm")
       required
       />
     </div>
-    <div class="col">
+    <div class="col-md-3">
     <label for="lname" className='form-label'>Last Name:</label>
       <input type="text" class="form-control"
       value={user.lastName}
       onChange={handleUser}
       placeholder="Enter last name" name="lname" required/>
     </div>
-    <div class="col">
+    <div class="col-md-3">
     <label for="email" className='form-label'>Email:</label>
       <input type="email" class="form-control"
       value={user.email}
@@ -104,7 +104,7 @@ navigate("/confirm")
 
   {/* date and time */}
   <div class="row">
-    <div class="col">
+    <div class="col-md-6">
         <label for="date" className='form-label'>Date:</label>
       <input type="date" class="form-control"  
       value={date}
@@ -114,7 +114,7 @@ navigate("/confirm")
       min={minDate}
       />
     </div>
-    <div class="col">
+    <div class="col-md-6">
     <label for="time" className='form-label'>Time:</label>
    <select name='date'
    className="form-select"
@@ -136,13 +136,13 @@ navigate("/confirm")
 
   {/* guests and occassion */}
   <div class="row">
-    <div class="col">
-        <label for="guests" className='form-label'>No. Of Guests:</label>
+    <div class="col-md-6">
+        <label for="guests" className='form-label'>Guests</label>
       <input type="number"
       value={guests} onChange={handleGuests}
       class="form-control" placeholder="2" name="guests"/>
     </div>
-    <div class="col">
+    <div class="col-md-6">
     <label for="occassion" className='form-label'>Occassion:</label>
      <select name="date" id="date" 
      className="form-select"

@@ -3,11 +3,11 @@ import {fetchAPI} from '../src/api/api'
 const AppContext =createContext()
 
 export const AppProvider=({children})=>{
-    const [confirm, setConfirm] = useState(false);
+    const [confirm, setConfirm] = useState(true);
     const [msg, setMsg] = useState({
-      line1: "",
-      line2: "",
-      line3: "",
+      line1: "test",
+      line2: "ts",
+      line3: "t",
     });
   
     const [availableTimes, setAvailableTimes] = useState([]);

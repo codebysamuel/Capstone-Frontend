@@ -1,41 +1,40 @@
-import {render,screen,fireEvent} from "@testing-library/react"
-import BookingForm from "./BookingForm"
+import React from "react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import BookingForm from "./BookingForm";
 
-describe("BookingForm",()=>{
-    it("Should display the form and handle form submission",()=>{
-        render (<BookingForm/>);
-        
-        //get the elements
-        const FNInput=screen.getByLabelText(/first name/i);
-        const LNInput=screen.getByLabelText(/last name/i)
-        const EInput=screen.getByLabelText(/email/i)
-        const DTInput=screen.getByLabelText(/date/i)
-        const TSelect=screen.getByLabelText(/time/i)
-        const GInput=screen.getByLabelText(/guests/i)
-        const OCSelect=screen.getByLabelText(/occassion/i)
-        const SubButton=screen.getByText(/confirm reservation/i)
+describe("BookingForm", () => {
+  test("should render the form and handle form submission", () => {
+    render(<BookingForm />);
 
-      // Fill the fields
-      fireEvent.change(FNInput,{target:{value:'Gouri'}})
-      fireEvent.change(LNInput,{target:{value:"Bhise"}})
-      fireEvent.change(EInput,{target:{value:'gouri@test.com'}})
-      fireEvent.change(DTInput,{target:{value:'2024-08-13'}})
-      fireEvent.change(TSelect,{target:{value:"17:00"}})
-      fireEvent.change(GInput,{target:{value:"2"}})
-      fireEvent.change(OCSelect,{target:{value:"birthday"}})
+    // Find form elements
+    const firstNameInput = screen.getByLabelText(/first name/i);
+    const lastNameInput = screen.getByLabelText(/last name/i);
+    const emailInput = screen.getByLabelText(/email/i);
+    const dateInput = screen.getByLabelText(/date/i);
+    const timeSelect = screen.getByLabelText(/time/i);
+    const guestsInput = screen.getByLabelText(/guests/i);
+    const occasionSelect = screen.getByLabelText(/occasion/i);
+    const submitButton = screen.getByText(/confirm reservation/i);
 
-      //expected values
-      expect(FNInput.value).toBe('Gouri')
-      expect(LNInput.value).toBe("Bhise")
-      expect(EInput.value).toBe('gouri@test.com')
-      expect(DTInput.value).toBe('2024-08-13')
-      expect(TSelect.value).toBe("17:00")
-      expect(GInput.value).toBe("2")
-      expect(OCSelect.value).toBe("birthday")
+    // Fill in form fields
+    fireEvent.change(firstNameInput, { target: { value: "John" } });
+    fireEvent.change(lastNameInput, { target: { value: "Doe" } });
+    fireEvent.change(emailInput, { target: { value: "johndoe@example.com" } });
+    fireEvent.change(dateInput, { target: { value: "2023-06-01" } });
+    fireEvent.change(timeSelect, { target: { value: "17:00" } });
+    fireEvent.change(guestsInput, { target: { value: "2" } });
+    fireEvent.change(occasionSelect, { target: { value: "birthday" } });
 
-      //submit
-      fireEvent.click(SubButton)
+    // Expected form field values
+    expect(firstNameInput.value).toBe("John");
+    expect(lastNameInput.value).toBe("Doe");
+    expect(emailInput.value).toBe("johndoe@example.com");
+    expect(dateInput.value).toBe("2023-06-01");
+    expect(timeSelect.value).toBe("17:00");
+    expect(guestsInput.value).toBe("2");
+    expect(occasionSelect.value).toBe("birthday");
 
-
-    })
-})
+    // Submit the form
+    fireEvent.click(submitButton);
+  });
+});

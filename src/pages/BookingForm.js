@@ -14,7 +14,7 @@ const nextDayFormatted = `${year}-${month}-${day}`;
 const minDate = nextDayFormatted;
 
 function BookingForm(){
-    const { setConfirm, msg, setMsg, availableTimes} = useGlobalContext();
+    const { setConfirm,msg, setMsg, availableTimes} = useGlobalContext();
     const navigate=useNavigate()
   const [user,setUser]=useState({
     firstName:"",

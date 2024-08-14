@@ -8,6 +8,7 @@ import About from './pages/About'
 import BookingForm from './pages/BookingForm';
 import Menu from './pages/Menu';
 import ConfirmPage from './pages/ConfirmPage';
+import Reservation from './pages/Reservation';
 function App() {
   return (
     <div className='container-fluid'>
